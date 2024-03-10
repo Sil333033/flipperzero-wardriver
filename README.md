@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Flipper Zero with [Momentum Firmware]([https://flipper-xtre.me/](https://momentum-fw.dev/)) installed
+- Flipper Zero with [Momentum Firmware](https://momentum-fw.dev/) installed
 - GPIO board with the following modules:    [like this one](https://www.tindie.com/products/sce/flipper-zero-multi-fucc/)
   - ESP32. Could be an WROOM, S2, S3
   - GPS Module. As long as the GPS NMEA app outputs data you're fine
