@@ -2,14 +2,14 @@
 
 ## Requirements
 
-- Flipper Zero with [Xtreme Firmware](https://flipper-xtre.me/) installed
+- Flipper Zero with [Momentum Firmware]([https://flipper-xtre.me/](https://momentum-fw.dev/)) installed
 - GPIO board with the following modules:    [like this one](https://www.tindie.com/products/sce/flipper-zero-multi-fucc/)
   - ESP32. Could be an WROOM, S2, S3
   - GPS Module. As long as the GPS NMEA app outputs data you're fine
 
 ## Setup
 
-The ESP32 and GPS module cannot share the same UART channel, so make sure to have them seperated on `pin 13,14` (aka USUART) and `pin 15,16` (aka LPUART). Then you need to setup the channels inside the Xtreme app, navigate to Xtreme->Protocols->GPIO Pins and set your `UART ESP32 & NMEA channel` to the corresponding pins. This doesn't work on other firmwares due to lack of features. 
+The ESP32 and GPS module cannot share the same UART channel, so make sure to have them seperated on `pin 13,14` (aka USUART) and `pin 15,16` (aka LPUART). Then you need to setup the channels inside the Momentum app, navigate to Momentum->Protocols->GPIO Pins and set your `UART ESP32 & NMEA channel` to the corresponding pins. This doesn't work on other firmwares due to lack of features. 
 <br> <br>
 After setting the configuration right, we need to flash the ESP32 microcontroller. Download the binary file in the [release](https://github.com/Sil333033/flipperzero-wardriver/releases) tab that corresponds to your ESP32 model and copy it to your Flipper's SD card. 
 <br> <br>
